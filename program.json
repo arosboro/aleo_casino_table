@@ -1,0 +1,10 @@
+{
+    "program": "aleo_casino_table.aleo",
+    "version": "0.0.0",
+    "description": "",
+    "development": {
+        "private_key": "APrivateKey1zkp6YLqwc1BQzmVVmyeqbRgurBbpyPLnhRW1E1LgUZKbGYy",
+        "address": "aleo1s2hkr9nw7vp2vrlfzewwluqqfg8pfykcffm9gx90qmhk8vrj7urqum9yqn"
+    },
+    "license": "MIT"
+}
