@@ -1,6 +1,6 @@
 {
     "program": "aleo_casino_table.aleo",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "description": "",
     "development": {
         "private_key": "APrivateKey1zkp6YLqwc1BQzmVVmyeqbRgurBbpyPLnhRW1E1LgUZKbGYy",
