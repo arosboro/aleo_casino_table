@@ -137,36 +137,11 @@ program aleo_casino_table.aleo {
             player: p07,
             random_seed_hash: 0field,
             random_seed: 0u64,
-        }) then finalize(self.caller, p01, p02, p03, p04, p05, p06, p07);
+        }) then finalize(self.caller);
     }
 
-    finalize main(p00: address, p01: address, p02: address, p03: address, p04: address, p05: address, p06: address, p07: address) {
-        assert(p00 == self.caller);
-        let burn_address: address = aleo1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq3ljyzc;
-        if p00 != burn_address {
-            increment(table_count, p00, 1u64);
-        }
-        if p01 != burn_address {
-            increment(table_count, p01, 1u64);
-        }
-        if p02 != burn_address {
-            increment(table_count, p02, 1u64);
-        }
-        if p03 != burn_address {
-            increment(table_count, p03, 1u64);
-        }
-        if p04 != burn_address {
-            increment(table_count, p04, 1u64);
-        }
-        if p05 != burn_address {
-            increment(table_count, p05, 1u64);
-        }
-        if p06 != burn_address {
-            increment(table_count, p06, 1u64);
-        }
-        if p07 != burn_address {
-            increment(table_count, p07, 1u64);
-        }
+    finalize main(dealer: address) {
+        increment(table_count, dealer, 1u64);
     }
 
     transition sit(table: CasinoTable, random_seed: u64) -> public CasinoTable {
